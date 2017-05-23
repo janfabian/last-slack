@@ -1,6 +1,6 @@
 var request = require("request"),
 	commander = require("commander"),
-	config = require("./config.json"),
+	config = require("./config.js"),
 	currentTrack;
 
 function fetchLastPlayedTrack(username, callback) {

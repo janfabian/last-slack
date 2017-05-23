@@ -4,7 +4,7 @@
   "description": "Script to send your last playing track on Last.FM to a Slack WebHook",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "keywords": [
     "last.fm",
