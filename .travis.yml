@@ -11,5 +11,4 @@ cache:
   before_install:
   - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
 after_success:
-  - docker login -u $DOCKER_USER -p $DOCKER_PASS
   - "./build.sh"
