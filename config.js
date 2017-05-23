@@ -3,7 +3,7 @@ module.exports = {
 		"apiKey": process.env.LASTFM_API_KEY
 	},
 	"slack": {
-		"url": process.SLACK_HOOK_URL,
+		"url": process.env.SLACK_HOOK_URL,
 		"username": "Current track",
 		"icon": ":mario_luigi_dance:"
 	}
