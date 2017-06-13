@@ -37,13 +37,14 @@ function fetchLastPlayedTrack(username, callback) {
 					console.error("Unrecognized data", data);
 				}
 
-				setTimeout(function () {
-					fetchLastPlayedTrack(username, checkIfTrackIsPlayingAndNew);
-				}, 10000);
 			} catch (e) {
 				console.error(e, body);
 			}
 		}
+
+		setTimeout(function () {
+			fetchLastPlayedTrack(username, checkIfTrackIsPlayingAndNew);
+		}, 10000);
 	});
 }
 
