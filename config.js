@@ -5,6 +5,6 @@ module.exports = {
 	"slack": {
 		"url": process.env.SLACK_HOOK_URL,
 		"username": "Current track",
-		"icon": ":mario_luigi_dance:"
+		"icon": process.env.ICON || ":mario_luigi_dance:"
 	}
 }
