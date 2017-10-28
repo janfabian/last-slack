@@ -45,7 +45,12 @@ function fetchLastPlayedTrack(username, callback) {
 		setTimeout(function () {
 			fetchLastPlayedTrack(username, checkIfTrackIsPlayingAndNew);
 		}, 10000);
-	});
+	}).on("error", function(e){
+    console.log(e)
+		setTimeout(function () {
+			fetchLastPlayedTrack(username, checkIfTrackIsPlayingAndNew);
+		}, 10000);
+  }).end();
 }
 
 function checkIfTrackIsPlayingAndNew(track) {
